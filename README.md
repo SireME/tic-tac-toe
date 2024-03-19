@@ -1,6 +1,7 @@
 # Tic-Tac-Toe Game
 
 ![Tic-Tac-Toe Game Screenshot](./tictactoe.png)
+[DEPLOYED VERSION](https://tic-tac-toe-jg0j.onrender.com/)
 
 ## Description
 
