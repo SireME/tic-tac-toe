@@ -64,10 +64,26 @@ export default function Board() {
           <button onClick={restartGame}>Restart Board</button>
         </div>
       </div>
+      <Moves squares={squares} />
+      <p>Game Array: </p>
+      <p> {JSON.stringify(squares)}</p>
     </>
   );
 }
 
+function Moves({ squares }) {
+  let sum = 0;
+  for (let i = 0; i < squares.length; i++) {
+    if (squares[i] === "X" || squares[i] === "O") {
+      sum += 1;
+    }
+  }
+  return (
+    <>
+      <p style={{ fontSize: "30px", textAlign: "center" }}>Moves: {sum}</p>
+    </>
+  );
+}
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
